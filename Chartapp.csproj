@@ -14,4 +14,10 @@
     </Compile>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Data\weather.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

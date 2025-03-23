@@ -20,13 +20,15 @@
             base.Dispose(disposing);
         }
 
+        private void InitializeComponent(object button1) => throw new NotImplementedException();
+
         #region Windows Form Designer generated code
 
         /// <summary>
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponent(Button button1)
         {
             button1 = new Button();
             SuspendLayout();
@@ -52,28 +54,10 @@
             ResumeLayout(false);
         }
 
-        #endregion
-
-        private Button button1;
-
-        private void btnOpenFile_Click(object sender, EventArgs e)
+        private void opendialog(object sender, EventArgs e)
         {
-            //open a file dialog
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
-            {
-                //set the properties on the filedialog
-                openFileDialog.InitialDirectory = Path.Combine(Environment.CurrentDirectory, "Data");
-                openFileDialog.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
-                //open the filedialog and do something
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    //process the file information
-                    _filePath = openFileDialog.FileName;
-                    MessageBox.Show(_filePath);
-                }
-
-                
-            }
-        }   
+            throw new NotImplementedException();
+        }
     }
-}
+    #endregion
+}   
